@@ -2,7 +2,7 @@
 
 #define PLAYER_COUNT_VERTICAL_POS 60 // for vertical placement of the player count on the background
 #define PLAYER_COUNT_TEXT_HEIGHT 30 // for height of the text layer
-#define PLAYER_BITMAP_ID RESOURCE_ID_TIMER_BACKGROUND
+#define PLAYER_BITMAP_ID RESOURCE_ID_SELECT_BACKGROUND_BITMAP
 
 #define LABEL_TEXT_VERTICAL_POS 30
 #define LABEL_TEXT_HEIGHT 50
@@ -16,6 +16,7 @@ Window *player_select_window;
 GBitmap *player_count_background_bitmap;
 BitmapLayer *player_count_bitmap_layer;
 TextLayer *player_count_text_layer;
+GFont boom_font_60;
 
 TextLayer *round_number_text_layer;
 

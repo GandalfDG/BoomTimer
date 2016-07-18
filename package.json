@@ -14,13 +14,12 @@
         "resources": {
             "media": [
                 {
-                    "characterRegex": "[0-9:]",
-                    "file": "fonts/BoomFont.ttf",
-                    "name": "BOOM_FONT_60",
+                    "file": "images/Timer Background.png",
+                    "name": "TIMER_BACKGROUND_BITMAP",
                     "targetPlatforms": [
                         "aplite"
                     ],
-                    "type": "font"
+                    "type": "bitmap"
                 },
                 {
                     "characterRegex": "[0-9]",
@@ -32,9 +31,9 @@
                     "type": "font"
                 },
                 {
-                    "characterRegex": "[0-5]",
+                    "characterRegex": "[0-9:]",
                     "file": "fonts/BoomFont.ttf",
-                    "name": "BOOM_FONT_40",
+                    "name": "BOOM_FONT_60",
                     "targetPlatforms": [
                         "aplite"
                     ],
@@ -43,14 +42,6 @@
                 {
                     "file": "images/select_background.png",
                     "name": "SELECT_BACKGROUND_BITMAP",
-                    "targetPlatforms": [
-                        "aplite"
-                    ],
-                    "type": "bitmap"
-                },
-                {
-                    "file": "images/two-rooms WIP.png",
-                    "name": "TIMER_BACKGROUND",
                     "targetPlatforms": [
                         "aplite"
                     ],

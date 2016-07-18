@@ -69,6 +69,9 @@ void player_select_init(Window *window) {
 	Layer *window_layer = window_get_root_layer(player_select_window);
 	GRect bounds = layer_get_bounds(window_layer);
 	
+	// load the custom font
+	boom_font_60 = fonts_load_custom_font(resource_get_handle(RESOURCE_ID_BOOM_FONT_60));
+	
 	// initialize the background bitmap
 	player_count_background_bitmap = gbitmap_create_with_resource(PLAYER_BITMAP_ID); // change this in player_select.h
 	player_count_bitmap_layer = bitmap_layer_create(bounds);
@@ -87,8 +90,9 @@ void player_select_init(Window *window) {
   player_count_text_layer = text_layer_create(GRect(0, PLAYER_COUNT_VERTICAL_POS, 
 																										bounds.size.w, PLAYER_COUNT_TEXT_HEIGHT)); // these are adjusted in player_select.h
 	text_layer_set_background_color(player_count_text_layer, GColorClear);
-	text_layer_set_text_color(player_count_text_layer, GColorWhite);
+	text_layer_set_text_color(player_count_text_layer, GColorBlack);
 	text_layer_set_text_alignment(player_count_text_layer, GTextAlignmentCenter);
+	text_layer_set_font(player_count_text_layer, boom_font_60);
 	
 	// initialize the round number text layer
 	round_count = 3;

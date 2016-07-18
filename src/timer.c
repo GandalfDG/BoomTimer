@@ -1,5 +1,6 @@
 #include <pebble.h>
 #include "timer.h"
+#include "common.h"
 
 void set_timer() {
 	timer_seconds = 60 * round_count--; // set the time and decrement the round count
