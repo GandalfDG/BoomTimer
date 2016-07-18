@@ -16,11 +16,37 @@
                 {
                     "characterRegex": "[0-9:]",
                     "file": "fonts/BoomFont.ttf",
-                    "name": "BOOM_FONT_24",
+                    "name": "BOOM_FONT_60",
                     "targetPlatforms": [
                         "aplite"
                     ],
                     "type": "font"
+                },
+                {
+                    "characterRegex": "[0-9]",
+                    "file": "fonts/BoomFont.ttf",
+                    "name": "BOOM_FONT_40",
+                    "targetPlatforms": [
+                        "aplite"
+                    ],
+                    "type": "font"
+                },
+                {
+                    "characterRegex": "[0-5]",
+                    "file": "fonts/BoomFont.ttf",
+                    "name": "BOOM_FONT_40",
+                    "targetPlatforms": [
+                        "aplite"
+                    ],
+                    "type": "font"
+                },
+                {
+                    "file": "images/select_background.png",
+                    "name": "SELECT_BACKGROUND_BITMAP",
+                    "targetPlatforms": [
+                        "aplite"
+                    ],
+                    "type": "bitmap"
                 },
                 {
                     "file": "images/two-rooms WIP.png",
