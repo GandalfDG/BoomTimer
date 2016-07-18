@@ -1,0 +1,45 @@
+{
+    "author": "jackacase@gmail.com",
+    "dependencies": {},
+    "keywords": [],
+    "name": "boom-timer",
+    "pebble": {
+        "capabilities": [
+            ""
+        ],
+        "displayName": "Boom Timer",
+        "enableMultiJS": false,
+        "messageKeys": [],
+        "projectType": "native",
+        "resources": {
+            "media": [
+                {
+                    "characterRegex": "[0-9:]",
+                    "file": "fonts/BoomFont.ttf",
+                    "name": "BOOM_FONT_24",
+                    "targetPlatforms": [
+                        "aplite"
+                    ],
+                    "type": "font"
+                },
+                {
+                    "file": "images/two-rooms WIP.png",
+                    "name": "TIMER_BACKGROUND",
+                    "targetPlatforms": [
+                        "aplite"
+                    ],
+                    "type": "bitmap"
+                }
+            ]
+        },
+        "sdkVersion": "3",
+        "targetPlatforms": [
+            "aplite"
+        ],
+        "uuid": "70a25726-de04-4b38-9692-1335681a4ac9",
+        "watchapp": {
+            "watchface": false
+        }
+    },
+    "version": "1.0.0"
+}
