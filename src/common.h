@@ -4,6 +4,17 @@
 
 // the number of player, input on the player_select screen
 int player_count;
+int hostages;
+
+// the number of hostages, based on current round and number of players
+int hostage_array[5][5] = {
+	{1, 1, 1, 0, 0},
+	{1, 1, 2, 2, 2},
+	{1, 1, 2, 2, 3},
+	{1, 1, 2, 3, 4},
+	{1, 2, 3, 4, 5}
+};
+		
 
 // the number of rounds (either 3 or 5)
 int round_count;

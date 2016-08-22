@@ -99,9 +99,10 @@ void player_select_init(Window *window) {
 	round_number_text_layer = text_layer_create(GRect(0, PLAYER_COUNT_VERTICAL_POS, 
 																										bounds.size.w, PLAYER_COUNT_TEXT_HEIGHT)); // these are adjusted in player_select.h
 	text_layer_set_background_color(round_number_text_layer, GColorClear);
-	text_layer_set_text_color(round_number_text_layer, GColorWhite);
+	text_layer_set_text_color(round_number_text_layer, GColorBlack);
 	text_layer_set_text_alignment(round_number_text_layer, GTextAlignmentCenter);
 	text_layer_set_text(round_number_text_layer, "3\n");
+	text_layer_set_font(round_number_text_layer, boom_font_60);
 	layer_set_hidden(text_layer_get_layer(round_number_text_layer), true);
 	
 	// set up click handler for changing number of players

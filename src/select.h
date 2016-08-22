@@ -1,10 +1,10 @@
 #pragma once
 
-#define PLAYER_COUNT_VERTICAL_POS 60 // for vertical placement of the player count on the background
-#define PLAYER_COUNT_TEXT_HEIGHT 30 // for height of the text layer
+#define PLAYER_COUNT_VERTICAL_POS 73 // for vertical placement of the player count on the background
+#define PLAYER_COUNT_TEXT_HEIGHT 65 // for height of the text layer
 #define PLAYER_BITMAP_ID RESOURCE_ID_SELECT_BACKGROUND_BITMAP
 
-#define LABEL_TEXT_VERTICAL_POS 30
+#define LABEL_TEXT_VERTICAL_POS 63
 #define LABEL_TEXT_HEIGHT 50
 
 #define CLICK_REPEAT_DELAY 150 // repeat delay in milliseconds
