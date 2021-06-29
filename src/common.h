@@ -1,4 +1,4 @@
-#include <pebble.h>
+#pragma once
 
 #define PLAYER_COUNT_DEFAULT 10
 

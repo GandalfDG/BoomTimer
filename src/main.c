@@ -1,6 +1,5 @@
 #include <pebble.h>
-#include "common.h"
-#include "select.h"
+
 
 /* Check if there is currently a timer running, or if a game is in progress
 if so, resume the timer/game. If not, check if there is a player number stored

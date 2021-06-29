@@ -1,5 +1,6 @@
 #include <pebble.h>
 #include "timer.h"
+#include "select.h"
 #include "common.h"
 
 
@@ -13,7 +14,7 @@ void timer_window_init(Window *window) {
 	boom_font_40 = fonts_load_custom_font(resource_get_handle(RESOURCE_ID_BOOM_FONT_40));
 	
 	// initialize the background bitmap
-	timer_background_bitmap = gbitmap_create_with_resource(TIMER_BITMAP_ID); // change this in timer.h
+	timer_background_bitmap = gbitmap_create_with_resource(RESOURCE_ID_TIMER_BACKGROUND_BITMAP); // change this in timer.h
 	timer_bitmap_layer = bitmap_layer_create(bounds);
 	bitmap_layer_set_bitmap(timer_bitmap_layer, timer_background_bitmap);
 	
@@ -22,12 +23,10 @@ void timer_window_init(Window *window) {
 																										bounds.size.w, TIMER_TEXT_HEIGHT));
 	text_layer_set_background_color(timer_text, GColorClear);
 	text_layer_set_text_color(timer_text, GColorWhite);
-	text_layer_set_font(timer_text, *boom_font_60);
+	text_layer_set_font(timer_text, boom_font_60);
 	text_layer_set_text_alignment(timer_text, GTextAlignmentCenter);
 	// for testing
 	text_layer_set_text(timer_text, "04:59\n");
-	
-	
 	
 }
 

@@ -9,8 +9,8 @@
 int timer_seconds;
 bool timer_running;
 
-GFont *boom_font_60;
-GFont *boom_font_40;
+GFont boom_font_60;
+GFont boom_font_40;
 
 Window *timer_window;
 GBitmap *timer_background_bitmap;
